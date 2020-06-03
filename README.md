@@ -1,2 +1,2 @@
-# InfinityWebPage
+# Infinity
 Web page &amp; App prototype for my Interactive Design class.

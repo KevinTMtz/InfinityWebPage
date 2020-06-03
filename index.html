@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>I N F I N I T Y</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon.ico" sizes="any">
+  <link href="css/index.css" type="text/css" rel="stylesheet">
+  <link href="css/general.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700|Exo:300,400,500,700" rel="stylesheet">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136704865-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-136704865-1');
+  </script>
+
+  <!-- Inspectlet -->
+  <script type="text/javascript">
+    (function() {
+    window.__insp = window.__insp || [];
+    __insp.push(['wid', 684615435]);
+    var ldinsp = function(){
+    if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=684615435&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+    setTimeout(ldinsp, 0);
+    })();
+  </script>
+
+</head>
+
+<body>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <!--Script of the top bar-->
+  <script type="text/javascript" src="js/general.js"></script>
+
+  <!--Content of the top bar-->
+  <header class="top">
+    <div id="teamInfo">
+      <a href="./index.html"><img src="img/LogoImages/LogoWhite.png" id="logo" height="100px"></a>
+      <a href="./index.html"><img src="img/LogoImages/Name.png" id="logoName" width="300px"></a>
+      <img src="img/LogoImages/Frase.png" id="frase" width="300px">
+
+      <div class="ham" onclick="myFunction()">
+        <nav role="navigation">
+          <div id="menuToggle">
+            <input type="checkbox" />
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu"></ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div id="optionsBar">
+      <a href="./index.html" id="selecteda">Knocki Device</a>
+      <a href="./prototype.html">Prototype</a>
+      <a href="./thinkaloud.html">Test</a>
+      <a href="./aboutUs.html">About Us</a>
+      <a href="./personas.html">Personas</a>
+      <a href="./benchmarking.html">Benchmarking</a>
+    </div>
+    <div id="optionsBarMobile">
+      <nav>
+        <a href="./index.html">Knocki Device</a>
+        <a href="./prototype.html"><strong>Prototype</strong></a>
+        <a href="./thinkaloud.html">Test</a>
+        <a href="./aboutUs.html"><strong>About Us</strong></a>
+        <a href="./personas.html">Personas</a>
+        <a href="./benchmarking.html"><strong>Benchmarking</strong></a>
+      </nav>
+    </div>
+
+  </header>
+
+  <div id="title">
+    <h1>Knocki Device</h1>
+  </div>
+
+  <!--Section for the device-->
+  <section class="device">
+    <div class="banner">
+      <img src="img/KnockiImg/knocki1.png" id="knockidev">
+      <div>
+        <h3>The smartest way to control the world around you</h3>
+      </div>
+    </div>
+    <!--We have to show the device-->
+    <h4>High technology and design in a small device</h4>
+    <div id="video-frame">
+        <iframe src="https://www.youtube.com/embed/6lQTlN681y4?modestbranding=1&rel=0&color=white"
+            frameborder="0"></iframe>
+    </div>
+    <h4 style="margin: 20px 0px 0px 0px;">The most advanced app interface</h4>
+    <div id="video-frame">
+        <iframe src="https://www.youtube.com/embed/IB61vug6Eqs?modestbranding=1&rel=0&color=white"
+            frameborder="0"></iframe>
+    </div>
+    <div class="interactive-buttons">
+      <div class="div-btn" onclick="mostrarContenido(0)">
+        <div class="button" id="btn1" onclick="mostrarContenido(0)"></div>
+        <h5>Transform a complete surface</h5>
+      </div>
+      <div class="div-btn" onclick="mostrarContenido(1)">
+        <div class="button" id="btn2" onclick="mostrarContenido(1)"></div>
+        <h5>Endless applications!</h5>
+      </div>
+      <div class="div-btn" onclick="mostrarContenido(2)">
+        <div class="button" id="btn3" onclick="mostrarContenido(2)"></div>
+        <h5>Easy setup!</h5>
+      </div>
+      <div class="div-btn" onclick="mostrarContenido(3)">
+        <div class="button" id="btn4" onclick="mostrarContenido(3)"></div>
+        <h5>Beautiful piece of engineering</h5>
+      </div>
+    </div>
+    <div class="content" id="content-1">
+      <div>
+        <h6>Put it anywhere in the surface and turn it into a touch interface</h6>
+        <p>You can put Knocki on a wall, under a table, behind a shelf or a door and it will have a solid connection to
+          the whole surface to detect the gesture signals. Hence anything can turn into a smart interface</p>
+      </div>
+    </div>
+    <div class="content" id="content-2">
+      <div class="imagen-texto">
+        <img src="img/KnockiImg/action1.jpg" alt="Knocki on a surface">
+        <div>
+          <h6>How to control it?</h6>
+          <p>Just tap anywhere in the surface and Knocki will identify it. The actions will be triggered by the quantity
+            of taps or for more functionality, you can set patterns of different amount of taps.</p>
+        </div>
+      </div>
+      <h6>Platforms Knocki supports</h6>
+      <img
+        src="https://ksr-ugc.imgix.net/assets/011/156/385/8010c8acc8f5bda810b52904acccc710_original.jpg?ixlib=rb-1.1.0&w=680&fit=max&v=1462907862&auto=format&gif-q=50&q=92&s=4b671f12e68a05ed19bd7d2597028385">
+    </div>
+    <div class="content" id="content-3">
+      <div class="imagen-texto">
+        <img src="img/KnockiImg/action3.jpg" alt="Control your telly with Knocki">
+        <div>
+          <h6>Transform all surfaces around your home or office into intelligent interfaces.</h6>
+          <p>Knocki works well anywhere with a Wi-Fi internet connection. Setting it up just takes a few minutes:
+            Connect it to a Wi-Fi network and link your devices and accounts through the companion app.</p>
+          <p>Once it is mounted to a surface, define the gestures to trigger the actions. Knocki will continue working
+            via Wi-Fi even if the phone is turned off.</p>
+        </div>
+      </div>
+      <h6>Three simple steps and enjoy its functionality!</h6>
+      <img
+        src="https://ksr-ugc.imgix.net/assets/011/224/429/382fbd605fabc8d53b7774fc3d890b3a_original.jpg?ixlib=rb-1.1.0&w=680&fit=max&v=1463439877&auto=format&gif-q=50&q=92&s=4e99cf0c5af991367bd5eb95a4943263"
+        alt="Download the Knocki App">
+    </div>
+    <div class="content" id="content-4">
+      <h6>Cutting edge technology inside Knocki</h6>
+      <p>Using sophisticated software and hardware algorithms can tell between deliberate taps and random vibrations
+        from the environment to minimise false positives. Nor it is affected by sound, so there can be many Knocki
+        devices in the same room without any interference problem. Despite all this functionality, Knocki can last up to
+        12 months with a single use of AAA batteries.</p>
+      <h6>What is on the inside?</h6>
+      <img
+        src="https://ksr-ugc.imgix.net/assets/011/224/136/cd5a454add3a1673594af2832a756ec0_original.jpg?ixlib=rb-1.1.0&w=680&fit=max&v=1463437826&auto=format&gif-q=50&q=92&s=b7ffc10c977a4291de9602da8c09aeaf"
+        alt="Inside Knocki">
+    </div>
+    <script src="js/botones.js" charset="utf-8"></script>
+    <div class="footer">
+      <div class="imagen-texto">
+        <img src="img/KnockiImg/smart-home.jpeg" alt="Smart home">
+        <div>
+          <h4>There is a world of posibilities for you to discover</h4>
+        </div>
+      </div>
+      <div class="uses-grid">
+        <div class="uses-item">
+          <div class="icono-uso" id="icono1"></div>
+          <p>Turn the lights on/off</p>
+        </div>
+        <div class="uses-item">
+          <div class="icono-uso" id="icono2"></div>
+          <p>Control the A/C</p>
+        </div>
+        <div class="uses-item">
+          <div class="icono-uso" id="icono3"></div>
+          <p>Brew coffee from anywhere</p>
+        </div>
+        <div class="uses-item">
+          <div class="icono-uso" id="icono4"></div>
+          <p>Play your favourite music</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

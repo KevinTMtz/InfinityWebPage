@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>I N F I N I T Y &nbsp; | &nbsp; Prototype</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon.ico" sizes="any">
+    <link href="css/general.css" type="text/css" rel="stylesheet">
+    <link href="css/prototype.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700|Exo:400,700" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136704865-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-136704865-1');
+    </script>
+
+    <!-- Inspectlet -->
+    <script type="text/javascript">
+        (function() {
+        window.__insp = window.__insp || [];
+        __insp.push(['wid', 684615435]);
+        var ldinsp = function(){
+        if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=684615435&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+        setTimeout(ldinsp, 0);
+        })();
+    </script>
+
+</head>
+
+<body>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <!--Script of the top bar-->
+    <script type="text/javascript" src="js/general.js"></script>
+
+    <!--Content of the top bar-->
+    <header class="top">
+        <div id="teamInfo">
+            <a href="./index.html"><img src="img/LogoImages/LogoWhite.png" id="logo" height="100px"></a>
+            <a href="./index.html"><img src="img/LogoImages/Name.png" id="logoName" width="300px"></a>
+            <img src="img/LogoImages/Frase.png" id="frase" width="300px">
+
+            <div class="ham" onclick="myFunction()">
+                <nav role="navigation">
+                    <div id="menuToggle">
+                        <input type="checkbox" />
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                        <ul id="menu"></ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div id="optionsBar">
+            <a href="./index.html">Knocki Device</a>
+            <a href="./prototype.html" id="selecteda">Prototype</a>
+            <a href="./thinkaloud.html">Test</a>
+            <a href="./aboutUs.html">About Us</a>
+            <a href="./personas.html">Personas</a>
+            <a href="./benchmarking.html">Benchmarking</a>
+        </div>
+        <div id="optionsBarMobile">
+            <nav>
+                <a href="./index.html">Knocki Device</a>
+                <a href="./prototype.html"><strong>Prototype</strong></a>
+                <a href="./thinkaloud.html">Test</a>
+                <a href="./aboutUs.html"><strong>About Us</strong></a>
+                <a href="./personas.html">Personas</a>
+                <a href="./benchmarking.html"><strong>Benchmarking</strong></a>
+            </nav>
+        </div>
+
+    </header>
+
+    <div id="title">
+        <h1>High Level Prototype</h1>
+    </div>
+
+    <section class="appPrototype">
+        <div id="div0">
+            <img src="img/InterfacePhonePng/app.png" id="app1">
+            <div id="marvelPDiv" class="appPDiv">
+                <p id="marvelText">
+                    <strong>
+                        Check our App.
+                    </strong>
+                </p>
+                <a href="./app/app.html" target="_blank" id="buttonToMarvel">
+                    Click Here
+                </a>
+            </div>
+            <img src="img/InterfacePhonePng/app.png" id="app2">
+        </div>
+    </section>
+
+    <div id="title">
+        <h1>Low Level Prototype</h1>
+    </div>
+
+    <!--Screenshots of the interfaces of the app-->
+    <section class="marvelPrototype marvelPrototypeDesktop">
+        <div id="div1">
+            <iframe src="https://marvelapp.com/1da7e4a6?emb=1" scrolling="no"></iframe>
+            <div id="marvelPDiv">
+                <p id="marvelText">
+                    <strong>
+                        Interact here with our Marvel prototype or click on the link.
+                    </strong>
+                </p>
+                <a href="https://marvelapp.com/1da7e4a6" target="_blank" id="buttonToMarvel">
+                    Click Here
+                </a>
+            </div>
+        </div>
+        <div id="div2">
+            <p>
+                In this screen we will have an image as background, here will be the title of the company, an image of
+                knocki device an just one button to start the process of login in.
+            </p>
+            <img src="img/InterfacePhonePng/0.png">
+        </div>
+        <div id="div3">
+            <img src="img/InterfacePhonePng/1.png">
+            <p>
+                For the login in screen will be two inputs, one for your username and one for your password.
+            </p>
+        </div>
+        <div id="div4">
+            <p>
+                After login in, you will be send to the Knocki management screen, were you can check your registered
+                Knocki devices and have the option of add more. After this point there will always be in the bottom of
+                the screen a bar with the home button, return button, info button and settings button.
+            </p>
+            <img src="img/InterfacePhonePng/2.png">
+        </div>
+        <div id="div5">
+            <img src="img/InterfacePhonePng/3.png">
+            <p>
+                This will just be a status screen that will be displayed when the system is searching for a new Knocki
+                device.
+            </p>
+        </div>
+        <div id="div6">
+            <p>
+                This screen will display the Knocki devices that have been found, after that you will have to choose one
+                and then you will be able to configure the touch gestures.
+            </p>
+            <img src="img/InterfacePhonePng/3.5.png">
+        </div>
+        <div id="div7">
+            <img src="img/InterfacePhonePng/4.png">
+            <p>
+                After finishing adding knockis, you will be able to enter the home screen. In the home screen you will
+                be able to manage your Knocki Devices by the place they are and in the bottom there will be the "add new
+                space" button.
+            </p>
+        </div>
+        <div id="div8">
+            <p>
+                If you select one of the places displayed, you will visualize a few options, in the top you will be able
+                to add a new gesture and in the middle you will be able to select an the modify the existing gestures.
+            </p>
+            <img src="img/InterfacePhonePng/5.png">
+        </div>
+        <div id="div9">
+            <img src="img/InterfacePhonePng/6.png">
+            <p>
+                After pressing the "add new touch" button, you will be able to name it, define the gesture, select the
+                device that will register that gesture and the actions that the device will do after detecting the
+                gesture.
+            </p>
+        </div>
+        <div id="div10">
+            <p>
+                After adding a new gesture you will return to the options on the place selected before, you will
+                visualize the gesture added, and again you will be able to modify the gestures or add a new one.
+            </p>
+            <img src="img/InterfacePhonePng/8.png">
+        </div>
+        <div id="div10">
+            <img src="img/InterfacePhonePng/9.png">
+            <p>
+                If you select one of the existing gestures, you will be able to change its name, edit the gesture or
+                register that gesture with another Knocki device.
+            </p>
+        </div>
+        <div id="div11">
+            <p>
+                In the home screen if you select the "add new space" button you will be able to edit the existing spaces
+                or add a new one with specific characteristics.
+            </p>
+            <img src="img/InterfacePhonePng/10.png">
+        </div>
+        <div id="div12">
+            <img src="img/InterfacePhonePng/11.png">
+            <p>
+                Finally after adding a new space, you will return to the home screen, there you will see the existing
+                spaces and the new one, you will be able to interact with the app and do any of the processes whenever
+                you want.
+            </p>
+        </div>
+    </section>
+
+
+
+    <section class="marvelPrototypeMobile marvelPrototype">
+        <div id="div1">
+            <iframe src="https://marvelapp.com/1da7e4a6?emb=1"></iframe>
+            <div id="marvelPDiv">
+                <p id="marvelText">
+                    <strong>
+                        Interact here with our Marvel prototype or click on the link.
+                    </strong>
+                </p>
+                <a href="https://marvelapp.com/1da7e4a6" target="_blank" id="buttonToMarvel">
+                    Click Here
+                </a>
+            </div>
+        </div>
+        <div id="div2">
+            <img src="img/InterfacePhonePng/0.png">
+            <p>
+                In this screen we will have an image as background, here will be the title of the company, an image of
+                knocki device an just one button to start the process of login in.
+            </p>
+        </div>
+        <div id="div3">
+            <img src="img/InterfacePhonePng/1.png">
+            <p>
+                For the login in screen will be two inputs, one for your username and one for your password.
+            </p>
+        </div>
+        <div id="div4">
+            <img src="img/InterfacePhonePng/2.png">
+            <p>
+                After login in, you will be send to the Knocki management screen, were you can check your registered
+                Knocki devices and have the option of add more. After this point there will always be in the bottom of
+                the screen a bar with the home button, return button, info button and settings button.
+            </p>
+        </div>
+        <div id="div5">
+            <img src="img/InterfacePhonePng/3.png">
+            <p>
+                This will just be a status screen that will be displayed when the system is searching for a new Knocki
+                device.
+            </p>
+        </div>
+        <div id="div6">
+            <img src="img/InterfacePhonePng/3.5.png">
+            <p>
+                This screen will display the Knocki devices that have been found, after that you will have to choose one
+                and then you will be able to configure the touch gestures.
+            </p>
+        </div>
+        <div id="div7">
+            <img src="img/InterfacePhonePng/4.png">
+            <p>
+                After finishing adding knockis, you will be able to enter the home screen. In the home screen you will
+                be able to manage your Knocki Devices by the place they are and in the bottom there will be the "add new
+                space" button.
+            </p>
+        </div>
+        <div id="div8">
+            <img src="img/InterfacePhonePng/5.png">
+            <p>
+                If you select one of the places displayed, you will visualize a few options, in the top you will be able
+                to add a new gesture and in the middle you will be able to select an the modify the existing gestures.
+            </p>
+        </div>
+        <div id="div9">
+            <img src="img/InterfacePhonePng/6.png">
+            <p>
+                After pressing the "add new touch" button, you will be able to name it, define the gesture, select the
+                device that will register that gesture and the actions that the device will do after detecting the
+                gesture.
+            </p>
+        </div>
+        <div id="div10">
+            <img src="img/InterfacePhonePng/8.png">
+            <p>
+                After adding a new gesture you will return to the options on the place selected before, you will
+                visualize the gesture added, and again you will be able to modify the gestures or add a new one.
+            </p>
+        </div>
+        <div id="div10">
+            <img src="img/InterfacePhonePng/9.png">
+            <p>
+                If you select one of the existing gestures, you will be able to change its name, edit the gesture or
+                register that gesture with another Knocki device.
+            </p>
+        </div>
+        <div id="div11">
+            <img src="img/InterfacePhonePng/10.png">
+            <p>
+                In the home screen if you select the "add new space" button you will be able to edit the existing spaces
+                or add a new one with specific characteristics.
+            </p>
+        </div>
+        <div id="div12">
+            <img src="img/InterfacePhonePng/11.png">
+            <p>
+                Finally after adding a new space, you will return to the home screen, there you will see the existing
+                spaces and the new one, you will be able to interact with the app and do any of the processes whenever
+                you want.
+            </p>
+        </div>
+    </section>
+</body>
+
+</html>

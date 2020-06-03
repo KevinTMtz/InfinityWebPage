@@ -1,0 +1,161 @@
+#title {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.marvelPrototype p {
+    max-width: 700px;
+    width: 90%;
+    padding: 0px 10px;
+}
+
+.appPrototype div,
+.marvelPrototype div {
+    border-bottom: 1px solid white;
+    display: flex;
+    flex-wrap: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: justify;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+
+.marvelPrototype div img {
+    width: 250px; 
+    margin: 15px 0px;
+}
+
+.marvelPrototype #div1 iframe {
+    border: none;
+    height: 700px;
+    width: 500px;
+    margin: 10px 0px;
+    overflow: hidden;
+}
+
+.marvelPrototypeMobile #div1 iframe {
+    border: none;
+    height: 730px;
+    width: 430px;
+    overflow: hidden;
+}
+
+#marvelText {
+    font-size: 30px; 
+}
+
+.appPrototype #div0 #marvelPDiv,
+.marvelPrototype #div1 #marvelPDiv {
+    text-align: center;
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.appPrototype .appPDiv {
+    margin: 0px 30px;
+}
+
+#buttonToMarvel {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px 25px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+.marvelPrototype #div12 {
+    border-bottom: none;
+}
+
+.marvelPrototypeMobile {
+    display: none;
+}
+
+.appPrototype img {
+    margin: 20px 20px;
+    width: 350px;
+    border-radius: 30px;
+}
+
+.appPrototype #app1 {
+    display: none;
+}
+
+
+
+/********************************/
+/*          Responsive          */
+/********************************/
+
+
+
+@media screen and (max-width: 1078px) {
+    .marvelPrototypeDesktop {
+        display: none; 
+    }
+
+    .marvelPrototypeMobile {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 756px) {
+    .marvelPrototypeMobile div img #topimg {
+        margin: 0px 0px 5px 0px; 
+    }
+
+    .marvelPrototype div img {
+        margin: 20px 0px 0px 0px; 
+    }
+}
+
+/*   Aquí aparece ham menu   */
+@media screen and (max-width: 732px) {
+    .appPrototype #app1 {
+        display: block;
+    }
+
+    .appPrototype #app2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .marvelPrototype div img {
+        width: 300px; 
+    }
+
+    .marvelPrototype #div1 #marvelPDiv #buttonToMarvel {
+        margin-bottom: 30px;
+    }
+
+    .appPrototype img {
+        width: 330px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .appPrototype img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .marvelPrototypeMobile #div1 iframe {
+        height: 600px;
+    }
+
+    .teamMembers img {
+        width: 250px;
+    }
+
+    .appPrototype img {
+        width: 250px;
+    }
+}

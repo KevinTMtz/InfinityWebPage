@@ -1,0 +1,1091 @@
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{ 
+    position: absolute;
+    margin: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+
+    max-width: 1024px;
+    max-height: 1366px;
+    min-width: 320px;
+    min-height: 450px;
+    
+    background-color: rgb(0, 0, 0);
+}
+
+.app {
+    font-family: 'Exo', sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+section.app2,
+.app2 #body #box-2,
+.app2 #body #box-3,
+.app2 #body #box-4,
+.app2 #body #box-5,
+.app2 #body #box-6,
+.app2 #body #box-7,
+.app2 #body #box-8 {
+    display: none;
+}
+
+
+
+/*****************/
+/*****************/
+/*   First tab   */
+/*****************/
+/*****************/
+.app1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url("../img/back.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.app1 #div1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    margin: 0px;
+    width: 90%;
+}
+
+#div1 p {
+    font-size: 11.5vw;
+    letter-spacing: 3.5px;
+    font-family: 'Times New Roman';
+}
+
+.app1 #div1 img {
+    width: 120px;
+    margin: 20px 0px 5vh 0px;
+}
+
+#div1 #input-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#div1 #input-form input {
+    background-color: rgba(14, 14, 14, 0.65);
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    border-radius: 20px;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+    width: 70vw;
+    max-width: 350px;
+    margin-bottom: 5px;
+    font-family: 'Exo', sans-serif;
+}
+
+#div1 #input-form #mail {
+    display: none;
+}
+
+#div1 #input-form #signin {
+    background-color: rgba(14, 14, 14, 0.9);
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    width: 45vw;
+    max-width: 250px;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 5vh;
+    font-weight: bold;
+}
+
+#div1 #input-form p {
+    font-size: 20px;
+    font-family: 'Exo', sans-serif;
+    margin-top: 25px;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 450px) {
+    #div1 p {
+        font-size: 55px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .app1 #div1 img {
+        width: 120px;
+        margin: 20px 0px 5vh 0px;
+    }
+    
+    #div1 #input input {
+        border-radius: 20px;
+        font-size: 22px;
+        padding: 15px;
+    }
+    
+    #div1 #input #signin {
+        padding: 10px;
+        border-radius: 15px;
+        font-size: 20px;
+        margin-top: 5vh;
+    }
+}
+
+@media screen and (max-width: 364px) {
+    #div1 #input input {
+        border-radius: 15px;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    #div1 p {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #div1 #input div,
+    #div1 #input input {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .app1 #div1 img {
+        width: 100px;
+    }
+}
+
+
+
+/*****************/
+/*****************/
+/*  Second tab   */
+/*****************/
+/*****************/
+
+.app2 {
+    flex-direction: column;
+    justify-content: center;
+    overflow: visible;
+    height: auto;
+}
+
+.app2 #footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    justify-content: space-evenly;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    height: 80px;
+    border-top: 2px solid white;
+}
+
+.app2 #body {
+    width: 100%;
+}
+
+.app2 #body .box {
+    width: 100%;
+}
+
+.app2 #body .box div h1 {
+    font-size: 40px;
+    padding: 10px 5%;
+    margin: 0px;
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+}
+
+/*****************/
+/*   Home tab    */
+/*****************/
+
+#box-1 {
+    padding-bottom: 110px;
+}
+
+#box-1 #home #home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#box-1 #home-content .home-d {
+    position: static;
+    width: 70%;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    padding: 10px 20px;
+    align-items: left;
+    flex-direction: column;
+}
+
+#box-1 #home #home-content h2 {
+    margin: 0px 0px 20px 0px;
+}
+
+#box-1 #home #home-content img {
+    width: 50%;
+    margin-bottom: 20px;
+    max-width: 300px;
+}
+
+#box-1 #home #home-content p {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#box-1 #home #home-content .home-d p {
+    font-size: 18px;
+    margin: 10px 0px;;
+}
+
+/******************/
+/*   Knocki tab   */
+/******************/
+#box-2 {
+    padding-bottom: 90px;
+}
+
+#box-2 #knocki #knocki-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#box-2 #knocki #add-knocki {
+    position: absolute;
+    top: 12px;
+    right: 11px;
+    cursor: pointer;
+}
+
+#box-2 #knocki-content .knocki-d {
+    position: relative;
+    margin-bottom: 20px;
+    width: 80%;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+#box-2 #knocki-content .knocki-d img {
+    height: 20vw;
+    max-height: 90px;
+}
+
+#box-2 #knocki-content p {
+    font-size: 22px;
+}
+
+#box-2 #knocki-content .knocki-d #knocki-info {
+    line-height: 25px;
+    margin-left: 5%;
+}
+
+#box-2 .knocki-d .status-on-off {
+    font-size: 20px;
+    position: absolute;
+    top: 25px;
+    right: -13px;
+    width: 75px;
+    height: 40px;
+}
+
+#box-2 .knocki-d #see-knocki-info {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 75px;
+    height: 40px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 374px) {
+    #box-2 #knocki-content p {
+        font-size: 18px;
+    }
+}
+
+/***********************/
+/*   Edit Knocki tab   */
+/***********************/
+#box-4 #editknockis #knocki-edit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0px auto;
+}
+
+#box-4 #editknockis #knocki-edit #device-icon {
+    margin: 0px 0px;
+    width: 100px;
+    height: 100px;
+}
+
+#box-4 #editknockis #knocki-edit img {
+    margin-top: 15px;
+    height: 25px;
+}
+
+#box-4 #editknockis #knocki-edit h3 {
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 20px 0px;
+    margin: 0px; 
+    font-size: 22px;
+}
+
+#box-4 #editknockis #knocki-edit #gestures-div {
+    width: 100%;
+}
+
+#box-4 #editknockis #knocki-edit .kocki-edit-info {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.488);
+}
+
+#box-4 #editknockis #knocki-edit .kocki-edit-info h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#box-4 #editknockis #knocki-edit .kocki-edit-info input {
+    margin: 0px 0px 20px 0px;
+    padding: 3px;
+    border: 2px solid white;
+    background-color: black;
+    font-size: 25px;
+    border-radius: 15px; 
+    color: white;
+    text-align: center;
+    width: 80%;
+    font-weight: bold;
+    font-family: 'Exo', sans-serif;
+}
+
+#box-4 #editknockis #knocki-edit .kocki-edit-info p {
+    font-size: 20px;
+}
+
+#box-4 #editknockis #knocki-edit .main-info {
+    border-bottom: none;
+} 
+
+#box-4 #editknockis #knocki-edit div#return {
+    font-size: 22px;
+    border-bottom: none;
+}
+
+#box-4 .kocki-edit-info .edit-this {
+    position: absolute;
+    top: 15px;
+    right: 7px;
+    width: 75px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#box-4 #editknockis #knocki-edit div.delete-knocki.kocki-edit-info {
+    border-bottom: none;
+    padding: 30px 0px 10px 0px;;
+}
+
+#box-4 #editknockis #div-gestures-button {
+    position: relative;
+    width: 100%;
+    align-items: center;
+}
+
+#box-4 #editknockis #add-gestures {
+    position: absolute;
+    top: 11px;
+    right: 0px;
+    cursor: pointer;
+}
+
+#box-4 #editknockis #knocki-edit .taps-append-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#box-4 #editknockis #knocki-edit .gestures-div-edit-knocki-tab {
+    height: 67px;
+}
+
+#box-4 #editknockis .done-edit-knocki {
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    cursor: pointer;
+}
+
+/**********************/
+/*   Add Knocki tab   */
+/**********************/
+#box-5 #addknockis #knocki-add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0px auto;
+}
+
+#box-5 #addknockis #knocki-add img {
+    width: 45%;
+    margin: 20px;
+    max-width: 250px;
+}
+
+#box-5 #addknockis #knocki-add #knocki-name,
+#box-5 #addknockis #knocki-add #knocki-code {
+    background-color: black;
+    border: 2px solid white;
+    padding: 10px;
+    width: 80%;
+    border-radius: 15px; 
+}
+
+#box-5 #addknockis #knocki-add p {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#box-5 #addknockis #knocki-add p#save-new-knocki {
+    font-size: 20px;
+    margin-top: 30px;
+    color: black;
+    border-radius: 50px;
+    padding: 8px 20px;
+    background-color: rgb(0, 165, 0);
+    cursor: pointer;
+}
+
+#box-5 #addknockis #knocki-add input {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+#box-5 #addknockis .cancel-add-knocki {
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    cursor: pointer;
+}
+
+
+
+/************************/
+/*   Add gestures tab   */
+/************************/
+#box-6 #addgestures #gesture-add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0px auto;
+}
+
+#box-6 #addgestures #gesture-add img {
+    width: 45%;
+    margin: 20px;
+}
+
+#box-6 #addgestures #gesture-add div,
+#box-6 #addgestures #gesture-add #gesture-name {
+    background-color: black;
+    border: 2px solid white;
+    padding: 10px;
+    width: 87%;
+    border-radius: 15px; 
+}
+
+#box-6 #addgestures #gesture-add p {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#box-6 #addgestures #gesture-add p#save-new-gesture {
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: black;
+    border-radius: 50px;
+    padding: 8px 20px;
+    background-color: rgb(0, 165, 0);
+    cursor: pointer;
+}
+
+#box-6 #addgestures #gesture-add div,
+#box-6 #addgestures #gesture-add input {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+#box-6 #addgestures #gesture-add div {
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+#box-6 #addgestures #gesture-add #tap-buttons {
+    border: 0px;
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 20px 0px;
+    padding: 0px;
+    max-width: 400px;
+}
+
+#box-6 #addgestures #gesture-add div #delete {
+    margin: 0px;
+    width: 25%;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: rgb(132, 31, 255);
+}
+
+#box-6 #addgestures #gesture-add div #space,
+#box-6 #addgestures #gesture-add div #tap {
+    margin: 0px;
+    width: 25%;
+    height: 44%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: rgb(132, 31, 255);
+}
+
+#box-6 #addgestures div#action-div {
+    position: relative;
+    margin-top: 5px;
+    border: 2px solid white;
+    padding: 10px;
+    width: 87%;
+    border-radius: 15px;
+    height: auto;
+    justify-content: space-between;
+}
+
+#box-6 #addgestures div#action-div #action-img {
+    height: auto;
+    width: 30%;
+    border-radius: 30px;
+    padding: 0px;
+    border: 1px solid black;
+    margin: 0px;
+}
+
+#box-6 #addgestures div#action-div select {
+    width: 65%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: 1px solid white;
+    -webkit-appearance: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+    background-image: url("../img/arrow.png");
+    background-position: 97% 55%;
+    background-repeat: no-repeat; 
+    background-size: 25px;
+}
+
+#box-6 #addgestures div#action-div #action-img img {
+    margin: 0px;
+    width: 100%;
+    max-width: 150px;
+    display: none;
+}
+
+#box-6 #addgestures .cancel-add-gesture {
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    cursor: pointer;
+}
+
+#box-6 .select-items {
+    background-color: black;
+}
+
+
+
+/***********************/
+/*  Edit gestures tab  */
+/***********************/
+#box-7 #editgestures #gesture-edit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0px auto;
+}
+
+#box-7 #editgestures #gesture-edit img {
+    width: 45%;
+    margin: 20px;
+}
+
+#box-7 #editgestures #gesture-edit div,
+#box-7 #editgestures #gesture-edit #gesture-edit-name {
+    background-color: black;
+    border: 2px solid white;
+    padding: 10px;
+    width: 87%;
+    border-radius: 15px; 
+}
+
+#box-7 #editgestures #gesture-edit p {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#box-7 #editgestures #gesture-edit p.delete-old-gesture {
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: black;
+    border-radius: 50px;
+    padding: 8px 20px;
+    background-color: rgb(159, 0, 0);
+    cursor: pointer;
+}
+
+#box-7 #editgestures #gesture-edit div,
+#box-7 #editgestures #gesture-edit input {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+#box-7 #editgestures #gesture-edit div {
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+#box-7 #editgestures #gesture-edit #delete-edit {
+    margin: 0px;
+    width: 25%;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: rgb(132, 31, 255);
+}
+
+#box-7 #editgestures #gesture-edit #tap-buttons {
+    border: 0px;
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 20px 0px;
+    padding: 0px;
+    max-width: 400px;
+}
+
+#box-7 #editgestures #gesture-edit div #space-edit,
+#box-7 #editgestures #gesture-edit div #tap-edit {
+    margin: 0px;
+    width: 25%;
+    height: 44%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: rgb(132, 31, 255);
+}
+
+#box-7 #editgestures div#action-div {
+    position: relative;
+    margin-top: 5px;
+    border: 2px solid white;
+    padding: 10px;
+    width: 87%;
+    border-radius: 15px;
+    height: auto;
+    justify-content: space-between;
+}
+
+#box-7 #editgestures div#action-div #action-img {
+    height: auto;
+    width: 30%;
+    border-radius: 30px;
+    padding: 0px;
+    border: 1px solid black;
+    margin: 0px;
+}
+
+#box-7 #editgestures div#action-div select {
+    width: 65%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    -webkit-appearance: none;
+    cursor: pointer;
+    padding: 5px;
+    background-image: url("../img/arrow.png");
+    background-position: 97% 55%;
+    background-repeat: no-repeat; 
+    background-size: 25px;
+}
+
+#box-7 #editgestures div#action-div #action-img img {
+    margin: 0px;
+    width: 100%;
+    max-width: 150px;
+    display: none;
+}
+
+
+#box-7 #editgestures .done-edit-gesture {
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    cursor: pointer;
+}
+
+
+
+/********************/
+/*   Settings tab   */
+/********************/
+#box-3 {
+    padding-bottom: 90px;
+}
+
+
+#box-3 #settings #user-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0px auto;
+}
+
+#box-3 #settings #user-content img {
+    width: 25%;
+    border-radius: 100%;
+    border: 1px solid white;
+    max-width: 150px;
+}
+
+#box-3 #settings #user-content #profile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#box-3 #settings #user-content #user-options {
+    cursor: pointer;
+}
+
+#box-3 #settings #user-content #user-options,
+#box-3 #settings #settings-content #settings-options {
+    align-items: center;
+    padding: 10px 0px;
+    width: 100%;
+    font-size: 18px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#box-3 #settings #settings-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0px auto;
+}
+
+#box-3 #settings #settings-content #settings-options.signout {
+    padding: 15px 0px;
+    border-bottom: none;
+    justify-content: center;
+}
+
+/*************************/
+/*     Edit account      */
+/*************************/
+#box-8 #account-edit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#box-8 #editaccount #account-edit p {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+#box-8 #editaccount #account-edit #account-edit-name,
+#box-8 #editaccount #account-edit #account-edit-mail,
+#box-8 #editaccount #account-edit #account-edit-password {
+    font-size: 22px;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    padding: 10px;
+    width: 80%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+#box-8 #editaccount .done-edit-account {
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    cursor: pointer;
+}
+
+#box-8 #editaccount #account-edit p.delete-account {
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: black;
+    border-radius: 50px;
+    padding: 8px 20px;
+    background-color: rgb(159, 0, 0);;
+    cursor: pointer;
+}
+
+/*************************/
+/*   To hide the radio   */
+/*************************/
+.app2 #one,
+.app2 #two,
+.app2 #three,
+.app2 #four {
+    display: none;
+}
+
+.app2 label{
+    display: flex;
+    justify-content: center;
+    transition: transform ease .5s,color  ease .5s;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 4px solid rgba(255, 255, 255, 0);
+}
+
+/************************/
+/*   Footer animation   */
+/************************/
+.app2 span {
+    transition: transform ease .5s,color  ease .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.app2 #one:checked~label.home,
+.app2 #two:checked~label.knocki,
+.app2 #three:checked~label.user,
+.app2 #four:checked~label.settings{
+    transform: translate(0,-15px);
+    color:rgb(255, 255, 255);
+    border: 4px solid white;
+    background-color: black;
+    border-radius: 10px;
+    font-size: 0px;
+}
+ 
+/******************************/
+/*   On/Off Knocki edit tab   */
+/******************************/
+#switch{
+    zoom: 1;
+    top: 0px;
+    right: 0px;
+    width: 75px;
+    height: 40px;
+}
+
+.toggle{
+    position: absolute;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    -webkit-transition: border-color .6s  ease-out;
+    transition: border-color .6s  ease-out;
+    box-sizing: border-box;
+}
+
+.toggle.toggle-on{
+    border-color: rgba(0, 169, 53, 0.872);
+    -webkit-transition: all .5s .15s ease-out;
+    transition: all .5s .15s ease-out;
+}
+
+.toggle-button{
+    position: absolute;
+    top: 4px;
+    width: 28px;
+    bottom: 4px;
+    right: 39px;
+    background-color: #ffffff;
+    border-radius: 19px; 
+    cursor: pointer;
+    -webkit-transition: all .3s .1s, width .1s, top .1s, bottom .1s;
+    transition: all .3s .1s, width .1s, top .1s, bottom .1s;
+}
+
+.toggle-on .toggle-button{
+    top: 3px;
+    width: 65px;
+    bottom: 3px;
+    right: 3px;
+    border-radius: 23px;
+    background-color: rgba(0, 169, 53, 0.872);
+    
+    -webkit-transition: all .2s .1s, right .1s;
+    transition: all .2s .1s, right .1s;
+}
+
+.toggle-text-on{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    line-height: 36px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    color: rgba(0,0,0,0);
+}
+
+.toggle-on .toggle-text-on{
+    color: rgb(0, 0, 0);
+    -webkit-transition: color .3s .15s ;
+    transition: color .3s .15s ;
+}
+
+.toggle-text-off{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 6px;
+    line-height: 36px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+    color: #b6b3bd;
+}
+
+.toggle-on .toggle-text-off{
+    color: rgba(0,0,0,0);
+}
+
+/* used for streak effect */
+.glow-comp{
+    position: absolute;
+    opacity: 0;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    border-radius: 6px;
+    box-shadow: 0 0 12px rgba(79, 129, 148, 0.2);
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.toggle-on .glow-comp{
+    opacity: 1;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+}

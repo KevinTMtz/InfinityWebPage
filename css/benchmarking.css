@@ -1,0 +1,203 @@
+html {
+  font-size: 24px;
+}
+
+h2 {
+  margin-left: 0px;
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.9rem;
+}
+
+p {
+  font-size: 1rem;
+  margin: 10px 0;
+  padding: 0px 20px;
+  text-align: justify;
+}
+
+.info {
+  display: grid;
+  grid-template: repeat(2, 1fr) / 1fr;
+}
+
+.fotos-app-container {
+  display: grid;
+  grid-template: 1fr / repeat(4, 1fr);
+  row-gap: 1rem;
+  column-gap: 0.75rem;
+  justify-items: center;
+  margin: 23px 0;
+}
+
+.product {
+  margin: 20px 0;
+  border-bottom: 1px solid white;
+}
+
+.last-product {
+  border-bottom: none;
+}
+
+.product-img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.webpage {
+  display: grid;
+  margin-top: 20px;
+  row-gap: 2rem;
+  grid-template: repeat(3, 1fr) / 1fr;
+}
+
+.webpage-img {
+  margin: 0px auto;
+  grid-row: 1 / span 2;
+  box-sizing: border-box;
+  width: 90%;
+  border-radius: 20px;
+}
+
+.description p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.fotos-app-container img {
+  border: 1px solid #fff;
+  width: 100%;
+  max-width: 250px;
+  border-radius: 25px;
+}
+
+.webpage p {
+  grid-row: 3 / 4;
+}
+
+#flip-last-p {
+  margin-bottom: 40px;
+}
+
+.product-img {
+  height: auto;
+}
+
+#Welle-img {
+  background-image: url("../img/BenchMarking/Welle-device-sin-fondo.png");
+  /*background-size: contain;
+  background-repeat: no-repeat;*/
+}
+
+#Flic-img {
+  background-image: url("../img/BenchMarking/Flic-device-blue.jpg");
+}
+
+/********************************/
+/*          Responsive          */
+/********************************/
+
+@media screen and (max-width: 750px) {
+  html {
+    font-size: 22px;
+  }
+
+  .webpage {
+    grid-gap: 0;
+  }
+}
+
+@media screen and (orientation: landscape), (min-width:1120px){
+  .info {
+    grid-template: 1fr / repeat(2, 1fr);
+    column-gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .webpage {
+    grid-template: 1fr / repeat(3, 1fr);
+  }
+
+  .webpage-img{
+    grid-column: 1 / span 2;
+    grid-row: 1 / 2;
+  }
+
+  .webpage p {
+    margin-top: 2%;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+}
+
+@media screen and (max-width: 1100px){
+  .fotos-app-container {
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 610px){
+  .fotos-app-container {
+    grid-template: repeat(4, 1fr) / 1fr;
+  }
+
+  .webpage {
+    grid-template: 2fr / 1fr;
+  }
+
+  .webpage-img{
+    grid-column: 1 / span 1;
+    grid-row: 1 / 2;
+  }
+
+  .webpage p {
+    grid-column: 1 / span 1;
+    grid-row: 2 / 3;
+  }
+}
+
+
+@media screen and (max-width: 375px){
+  html {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .description, .product-img {
+    width: 100%;
+  }
+
+  #Flic-img {
+    height: 87vw;
+  }
+
+  #Welle-img {
+    height: 52vw;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 11vw;
+  }
+}
+
+@media screen and (max-width: 168px) {
+  h3 {
+    font-size: 12vw;
+  }
+}

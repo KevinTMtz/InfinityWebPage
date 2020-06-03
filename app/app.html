@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>I N F I N I T Y</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon/favicon.ico" sizes="any">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700|Exo:300,400,500,700" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136704865-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-136704865-1');
+    </script>
+
+    <!-- Inspectlet -->
+    <script type="text/javascript">
+        (function() {
+        window.__insp = window.__insp || [];
+        __insp.push(['wid', 684615435]);
+        var ldinsp = function(){
+        if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=684615435&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+        setTimeout(ldinsp, 0);
+        })();
+    </script>
+
+    <!--Css files-->
+    <link href="./css/app.css" type="text/css" rel="stylesheet">
+
+    <!--Script-->
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script src="./js/store.everything.min.js"></script>
+    <script type="text/javascript" src="./js/app.js"></script>
+</head>
+
+<body>
+    <!--Section for the login tab-->
+    <section class="app app1">
+        <div id="div1">
+            <p id="title"><strong>I N F I N I T Y</strong></p>
+            <img src="../img/LogoImages/LogoWhite.png">
+            <form id="input-form">
+                <span id="error-name" style="color: rgb(255, 255, 255); font-size: 20px;">···</span>
+                <input type="text" placeholder="username" id="username" maxlength="10" minlength="5" required>
+                <input type="email" placeholder="name@example.com" id="mail">
+                <input id="password" type="password" placeholder="password" maxlength="10" minlength="5" required>
+                <input id="submit-hidden" type="submit" style="display: none">
+                <div id="signin">Sign in</div>
+                <p id="change-to-signup">Or sign up</p>
+            </form>
+        </div>
+    </section>
+
+    <!--Section for the app's tabs-->
+    <section class="app app2">
+        <div id="body">
+            <!--   Home tab   -->
+            <div id="box-1" class="box">
+                <div id="home">
+                    <h1>I N F I N I T Y</h1>
+                    <div id="home-content">
+                        <h2>Good evening</h2>
+                        <img src="./img/cloudy.png">
+                        <p>Cloudy 24º</p>
+                        <div class="home-d">
+                            <p style="font-size: 22px"><strong>Needs charging:</strong></p>
+                            <p>Bedroom Kevin - 13%</p>
+                            <p>Laundry Room - 5%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--   Knockis tab   -->
+            <div id="box-2" class="box">
+                <div id="knocki">
+                    <h1>Knocki</h1>
+                    <svg style="width:50px;height:50px" viewBox="0 0 24 24" id="add-knocki">
+                        <path fill="#ffffff" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                    </svg>
+                    <div id="knocki-content">
+                    </div>
+                </div>
+            </div>
+
+            <!--   Configuration tab   -->
+            <div id="box-3" class="box">
+                <div id="settings">
+                    <h1>Configuration</h1>
+                    <div id="user-content">
+                        <div id="profile">
+                            <img src="./img/profile.jpg">
+                            <h2 id="username-config">Username</h2>
+                        </div>
+                        <div id="user-options">
+                            <p><strong>Edit account</strong></p>
+                            <svg style="width:30px;height:30px" viewBox="0 0 24 24">
+                                <path fill="#ffffff" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div id="settings-content">
+                        <div id="settings-options">
+                            <p><strong>Notifications</strong></p>
+                            <svg style="width:30px;height:30px" viewBox="0 0 24 24">
+                                <path fill="#ffffff" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/>
+                            </svg>
+                        </div>
+                        <div id="settings-options">
+                            <p><strong>Report a problem</strong></p>
+                            <svg style="width:30px;height:30px" viewBox="0 0 24 24">
+                                <path fill="#ffffff" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+                            </svg>
+                        </div>
+                        <div id="settings-options">
+                            <p><strong>Help</strong></p>
+                            <svg style="width:30px;height:30px" viewBox="0 0 24 24">
+                                <path fill="#ffffff" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+                            </svg>
+                        </div>
+                        <div id="settings-options" class="signout">
+                            <p style="color: rgb(174, 1, 1)"><strong>Sign out</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--   Edit knocki tab   -->
+            <div id="box-4" class="box">
+                <div id="editknockis">
+                    <h1>Edit Knocki</h1>
+                    <svg style="width:50px;height:50px" viewBox="0 0 24 24" class="done-edit-knocki">
+                        <path fill="white" d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" />
+                    </svg>
+                    <div id="knocki-edit">
+                        <div class="kocki-edit-info main-info">
+                            <img src="./img/knocki-icon.png" id="device-icon">
+                            <h2>Location</h2>
+                            <input type="text" id="edit-knocki-location">
+                            <p style="color: rgb(132, 31, 255)">Battery: 100%</p>
+                            <div class="toggle" id="switch">
+                                <div class="toggle-text-off">OFF</div>
+                                <div class="glow-comp"></div>
+                                <div class="toggle-button"></div>
+                                <div class="toggle-text-on">ON</div>
+                            </div>
+                        </div>
+                        <div id="div-gestures-button">
+                            <h3>Gestures</h3>
+                            <svg style="width: 50px; height: 50px" viewBox="0 0 24 24" id="add-gestures">
+                                <path fill="#ffffff" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                            </svg>
+                        </div>
+                        <div id="gestures-div">
+                            <!--Here goes the gestures-->
+                        </div>
+                        <div class="kocki-edit-info delete-knocki" style="cursor: pointer">
+                            <p style="color: rgb(191, 0, 0); font-size: 20px">
+                                <strong>Delete Knocki</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--   Add knocki tab   -->
+            <div id="box-5" class="box">
+                    <div id="addknockis">
+                        <h1>Add knocki</h1>
+                        <svg style="width:50px;height:50px" viewBox="0 0 24 24" class="cancel-add-knocki">
+                                <path fill="red" d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" />
+                            </svg>
+                        <div id="knocki-add">
+                            
+                            <img src="./img/knocki-icon.png">
+
+                            <p><strong>Location</strong></p>
+                            <input type="text" id="knocki-name">
+                            <p><strong>Knocki Code</strong></p>
+                            <input type="text" id="knocki-code" value="5QH-439">
+
+                            <p id="save-new-knocki">Save new Knocki</p>
+                        </div>
+                    </div>
+            </div>
+
+            <!--   Add gestures tab   -->
+            <div id="box-6" class="box">
+                <div id="addgestures">
+                    <h1>Add gesture</h1>
+                    <svg style="width:50px;height:50px" viewBox="0 0 24 24" class="cancel-add-gesture">
+                        <path fill="red" d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"/>
+                    </svg>
+                    <div id="gesture-add">
+                        <p><strong>Action</strong></p>
+                        <input type="text" id="gesture-name">
+                        <p><strong>Gesture</strong></p>
+                        <div id="gesture-taps" style="border-color: rgb(132, 31, 255)">
+                            <!--Here goes the gesture taps-->
+                        </div>
+
+                        <div id="tap-buttons">
+                            <div id="delete">
+                                <svg style="width:40px;height:40px" viewBox="0 0 24 24">
+                                    <path fill="white" d="M22,3H7C6.31,3 5.77,3.35 5.41,3.88L0,12L5.41,20.11C5.77,20.64 6.31,21 7,21H22A2,2 0 0,0 24,19V5A2,2 0 0,0 22,3M19,15.59L17.59,17L14,13.41L10.41,17L9,15.59L12.59,12L9,8.41L10.41,7L14,10.59L17.59,7L19,8.41L15.41,12"/>
+                                </svg>
+                            </div>
+                            <div id="space">
+                                <svg style="width:50px;height:50px" viewBox="0 0 24 24">
+                                    <path fill="#ffffff" d="M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+                                </svg>
+                            </div>
+                            <div id="tap">
+                                <svg style="width:50px;height:50px" viewBox="0 0 24 24">
+                                    <path fill="#ffffff" d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <p style="margin-top: 10px"><strong>Linked app</strong></p>
+                        <div id="action-div">
+                            <div id="action-img">
+                                <img id="img1" class="action-appicon" src="./img/appsIcons/01.svg">
+                                <img id="img2" class="action-appicon" src="./img/appsIcons/031.svg">
+                                <img id="img3" class="action-appicon" src="./img/appsIcons/06.svg">
+                                <img id="img4" class="action-appicon" src="./img/appsIcons/04.svg">
+                                <img id="img5" class="action-appicon" src="./img/appsIcons/09.svg">
+                                <img id="img6" class="action-appicon" src="./img/appsIcons/012.svg">
+                                <img id="img7" class="action-appicon" src="./img/appsIcons/019.svg">
+                                <img id="img8" class="action-appicon" src="./img/appsIcons/023.svg">
+                                <img id="img9" class="action-appicon" src="./img/appsIcons/028.svg">
+                                <img id="img10" class="action-appicon" src="./img/appsIcons/029.svg">
+                            </div>
+                            <select id="linked-app-select-add">
+                                <option value="1"> Github</option>
+                                <option value="2"> Whatsapp</option>
+                                <option value="3"> Facebook</option>
+                                <option value="4"> Dropbox</option>
+                                <option value="5"> Google drive</option>
+                                <option value="6"> Instagram</option>
+                                <option value="7"> Reddit</option>
+                                <option value="8"> Spotify</option>
+                                <option value="9"> Uber</option>
+                                <option value="10"> Phone</option>
+                            </select>
+                        </div>
+
+                        <p id="save-new-gesture">Save new gesture</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--   Edit gestures tab   -->
+            <div id="box-7" class="box">
+                <div id="editgestures">
+                    <h1>Edit gesture</h1>
+                    <svg style="width:50px;height:50px" viewBox="0 0 24 24" class="done-edit-gesture">
+                        <path fill="#ffffff" d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"/>
+                    </svg>
+                    <div id="gesture-edit">
+                        <p><strong>Action</strong></p>
+                        <input type="text" id="gesture-edit-name">
+                        <p><strong>Gesture</strong></p>
+                        <div id="gesture-taps-edit" style="border-color: rgb(132, 31, 255)">
+                                <!--Here goes the gesture taps-->
+                        </div>
+    
+                        <div id="tap-buttons">
+                            <div id="delete-edit">
+                                <svg style="width:40px;height:40px" viewBox="0 0 24 24">
+                                    <path fill="white" d="M22,3H7C6.31,3 5.77,3.35 5.41,3.88L0,12L5.41,20.11C5.77,20.64 6.31,21 7,21H22A2,2 0 0,0 24,19V5A2,2 0 0,0 22,3M19,15.59L17.59,17L14,13.41L10.41,17L9,15.59L12.59,12L9,8.41L10.41,7L14,10.59L17.59,7L19,8.41L15.41,12"/>
+                                </svg>
+                            </div>
+                            <div id="space-edit">
+                                <svg style="width:50px;height:50px" viewBox="0 0 24 24">
+                                    <path fill="#ffffff" d="M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+                                </svg>
+                            </div>
+                            <div id="tap-edit">
+                                <svg style="width:50px;height:50px" viewBox="0 0 24 24">
+                                    <path fill="#ffffff" d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <p style="margin-top: 10px"><strong>Linked app</strong></p>
+                        <div id="action-div">
+                            <div id="action-img">
+                                <img id="img11" class="action-appicon" src="./img/appsIcons/01.svg">
+                                <img id="img22" class="action-appicon" src="./img/appsIcons/031.svg">
+                                <img id="img33" class="action-appicon" src="./img/appsIcons/06.svg">
+                                <img id="img44" class="action-appicon" src="./img/appsIcons/04.svg">
+                                <img id="img55" class="action-appicon" src="./img/appsIcons/09.svg">
+                                <img id="img66" class="action-appicon" src="./img/appsIcons/012.svg">
+                                <img id="img77" class="action-appicon" src="./img/appsIcons/019.svg">
+                                <img id="img88" class="action-appicon" src="./img/appsIcons/023.svg">
+                                <img id="img99" class="action-appicon" src="./img/appsIcons/028.svg">
+                                <img id="img1010" class="action-appicon" src="./img/appsIcons/029.svg">
+                            </div>
+                            <select id="linked-app-select-edit">
+                                <option value="1"> Github</option>
+                                <option value="2"> Whatsapp</option>
+                                <option value="3"> Facebook</option>
+                                <option value="4"> Dropbox</option>
+                                <option value="5"> Google drive</option>
+                                <option value="6"> Instagram</option>
+                                <option value="7"> Reddit</option>
+                                <option value="8"> Spotify</option>
+                                <option value="9"> Uber</option>
+                                <option value="10"> Phone</option>
+                            </select>
+                        </div>
+
+
+                        <p class="delete-old-gesture">Delete gesture</p>
+    
+                    </div>
+                </div>
+            </div>
+
+            <!--   Edit account tab   -->
+            <div id="box-8" class="box">
+                <div id="editaccount">
+                    <h1>Edit account</h1>
+                    <svg style="width:50px;height:50px" viewBox="0 0 24 24" class="done-edit-account">
+                        <path fill="#ffffff" d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"/>
+                    </svg>
+                    <div id="account-edit">
+                        <p><strong>Username</strong></p>
+                        <input type="text" id="account-edit-name">
+
+                        <p><strong>Mail</strong></p>
+                        <input type="text" id="account-edit-mail">
+
+                        <p><strong>Password</strong></p>
+                        <input type="text" id="account-edit-password">
+
+                        <p class="delete-account">Delete account</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <input type="radio" id="one" name="buttons" checked>
+            <label for="one" class="icons home"><span class="glyphicon glyphicon-home"><svg
+                        style="width:40px;height:40px" viewBox="0 0 24 24">
+                        <path fill="#ffffff" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" />
+                    </svg>
+                    <p>Home</p>
+                </span></label>
+            <input type="radio" id="two" name="buttons">
+            <label for="two" class="icons knocki"><span class="glyphicon glyphicon-search"><svg
+                        style="width:40px;height:40px" viewBox="0 0 24 24">
+                        <path fill="#ffffff"
+                            d="M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+                    </svg>
+                    <p>Knocki</p></label>
+            <input type="radio" id="three" name="buttons">
+            <label for="three" class="icons user"><span class="glyphicon glyphicon-heart"><svg
+                        style="width:40px;height:40px" viewBox="0 0 24 24">
+                        <path fill="#ffffff"
+                            d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" />
+                    </svg>
+                    <p>Config</p>
+                </span></label>
+        </div>
+    </section>
+</body>
+
+</html>

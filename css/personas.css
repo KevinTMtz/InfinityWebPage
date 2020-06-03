@@ -1,0 +1,126 @@
+#title {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.personas #persona1,
+.personas #persona2,
+.personas #persona3,
+.personas #persona4 {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    border-bottom: 1px solid white;
+    margin: 10px 0px;
+}
+
+.personas h2 {
+    margin: 0px;
+}
+
+.personas div div {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    margin: 0px 0px 0px 30px;
+    text-align: justify;
+    min-width: 500px;
+}
+
+.personas div div p {
+    font-size: 22px;
+}
+
+.personas div img {
+    padding: 0px 0px;
+    width: 350px;
+    margin: 10px 0px;
+}
+
+.personasmobile {
+    display: none;
+}
+
+.personas h1 {
+    font-size: 35px;
+    margin: 0px;
+}
+
+.personas #persona4 {
+    border-bottom: 0px solid white;
+}
+
+
+
+/********************************/
+/*          Responsive          */
+/********************************/
+
+@media screen and (max-width: 1000px) {
+    .personas div img {
+        width: 300px;
+    }
+
+    .personas div div p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .personasmobile {
+        display: block;
+    }
+
+    .personasDesktop {
+        display: none;
+    }
+
+    .personas #persona1,
+    .personas #persona2,
+    .personas #persona3,
+    .personas #persona4 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    }
+
+    .personas div div {
+        width: 100%;
+        text-align: center;
+        min-width: 250px;
+        margin: 0px;
+    }
+
+    .personas div div p {
+        font-size: 22px;
+    }
+
+    .personas div img {
+        width: 350px;
+    }
+}
+
+/*   Aquí aparece ham menu   */
+@media screen and (max-width: 660px) {
+    
+}
+
+@media screen and (max-width: 480px) {
+    .personas div img {
+        width: 330px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    
+}
+
+@media screen and (max-width: 350px) {
+    .personas div img {
+        width: 300px;
+    }
+}
